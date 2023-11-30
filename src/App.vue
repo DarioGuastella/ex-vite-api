@@ -12,8 +12,7 @@ export default {
     }
   },
   mounted() {
-    this.getBeers();
-    console.log(this.store)
+    this.getBeers()
   },
   methods: {
     getBeers() {
@@ -26,7 +25,22 @@ export default {
 </script>
 
 <template>
-  <BeerCard v-for="beer in store.beers" :beer="beer" />
+  <main>
+    <h1>Le nostre Birre Irlandesi</h1>
+    <div class="wrapper">
+      <BeerCard v-for="beer in store.beers" :beer="beer" />
+    </div>
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+</style>
