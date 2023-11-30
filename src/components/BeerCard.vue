@@ -11,7 +11,6 @@ export default {
     <div class="cardContainer">
         <div class="shadowBox">
             <h2>Nome birra: <br>{{ beer.name }}</h2>
-            <h4>Paese di provenienza: <br>{{ beer.country }}</h4>
             <h4>Città di provenienza: <br>{{ beer.city }}</h4>
             <h4>Indirizzo del produttore: <br>{{ beer.street }}</h4>
             <h4>Sito del produttore: <br><a href="#">{{ beer.website_url }}</a></h4>
