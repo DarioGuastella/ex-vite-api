@@ -26,7 +26,7 @@ export default {
 
 <template>
   <main>
-    <h1>Le nostre Birre Irlandesi</h1>
+    <h1>Le nostre birre Irlandesi</h1>
     <div class="wrapper">
       <BeerCard v-for="beer in store.beers" :beer="beer" />
     </div>
