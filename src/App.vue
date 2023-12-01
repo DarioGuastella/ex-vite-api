@@ -22,7 +22,7 @@ export default {
       let apiAddress = this.store.apiUrl;
       if (this.store.beersType.length) {
         apiAddress += "&by_type=" + this.store.beersType;
-        console.log(apiAddress)
+        // console.log(apiAddress)
       }
       axios.get(apiAddress).then(result => {
         this.store.beers = result.data;
