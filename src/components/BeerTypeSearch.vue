@@ -9,7 +9,7 @@ export default {
         }
     },
     methods: {
-        search() {
+        searchByBeerType() {
             // console.log("Tipo di birra: ", this.store.beersType);
             this.$emit("search");
             // console.log(this.store.beersType);
@@ -24,7 +24,7 @@ export default {
     <div>
         <label for="beers">Scegli una tipologia di birra:</label>
 
-        <select v-model="store.beersType" name="beers" id="beers" @change="search">
+        <select v-model="store.beersType" name="beers" id="beers" @change="searchByBeerType">
             <option value="">--Seleziona--</option>
             <option value="micro">Micro</option>
             <option value="regional">Regional</option>
