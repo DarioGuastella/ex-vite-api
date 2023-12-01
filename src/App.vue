@@ -35,7 +35,7 @@ export default {
 
 <template>
   <main>
-    <h1>Le nostre birre Irlandesi</h1>
+    <h1>I nostri birrifici Irlandesi</h1>
     <BeerTypeSearch @search="getBeers" />
     <div class="wrapper">
       <BeerCard v-for="beer in store.beers" :beer="beer" />
