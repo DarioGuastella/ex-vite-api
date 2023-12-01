@@ -14,6 +14,7 @@ export default {
             <h4>Città di provenienza: <br>{{ beer.city }}</h4>
             <h4>Indirizzo del produttore: <br>{{ beer.street }}</h4>
             <h4>Sito del produttore: <br><a href="#">{{ beer.website_url }}</a></h4>
+            <h4>Tipo di birra: <br>{{ beer.brewery_type }}</h4>
         </div>
     </div>
 </template>
@@ -28,7 +29,7 @@ export default {
     padding: 2rem;
     background-image: url("https://img.freepik.com/free-photo/tasty-american-beer-composition_23-2148907577.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697068800&semt=ais");
     border-radius: 10px;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 
